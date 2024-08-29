@@ -1,0 +1,61 @@
+.single-column {
+  column-count: 1;
+}
+
+.double-column {
+  column-count: 2;
+}
+
+.statenvertaling-page.dark-mode {
+  background-color: #373737;
+  color: #c3c3c3;
+}
+
+.statenvertaling-page.light-mode {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.font1 {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.font2 {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.font3 {
+  font-family: 'Courier Prime', monospace;
+}
+
+.font4 {
+  font-family: 'Noto Serif', serif;
+}
+
+.font-size-14 {
+  font-size: 14px;
+}
+
+.font-size-18 {
+  font-size: 18px;
+}
+
+.font-size-23 {
+  font-size: 23px;
+}
+
+.font-size-25 {
+  font-size: 25px;
+}
+
+.font-weight-normal {
+  font-weight: normal;
+}
+
+.font-weight-bold {
+  font-weight: bold;
+}
+
+.font-weight-italic {
+  font-style: italic;
+}

@@ -1,0 +1,791 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.home {
+    background-image: url('./img/bijbel_achtergrond.jpg');
+    background-repeat: no-repeat;
+}
+
+.boek {
+    position: absolute;
+    background-color: #fff;
+    top: 108px;
+    left: 400px;
+    align-items: center;
+    height: 892px;
+    width: 1365px;
+    border-style: solid;
+    border-radius: 20px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+}
+
+.logo_gbs {
+    background-image: url('./logo_tekst.svg');
+    background-repeat: no-repeat;
+    position: absolute;
+    margin-top: 20px;
+    top: 10px;
+    left: 29px;
+    height: 108px;
+    width: 400px;
+}
+
+.logo {
+    background-image: url('./logo-gbs.svg');
+    background-repeat: no-repeat;
+    position: absolute;
+    margin-top: 20px;
+    top: 10px;
+    left: 1590px;
+    height: 92.15px;
+    width: 330px;
+}
+
+.kies {
+    position: absolute;
+    top: 50px;
+    margin-left: 30px;
+    width: 551px;
+    height: 40px;
+    font-size: 30px;
+    color: #C64A2F;
+}
+
+.lijst {
+    position: relative;
+    top: 100px;
+    margin-left: 30px;
+}
+
+.lijst li {
+    position: relative;
+    padding-left: 2em;
+    cursor: pointer;
+    list-style: none;
+}
+
+.lijst li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 0.5em;
+    height: 0.5em;
+    border: 2px solid black;
+    border-radius: 50%;
+    background-color: transparent;
+    transition: background-color 0.3s;
+}
+
+.lijst li.active::before {
+    background-color: lightgray;
+}
+
+.lezen {
+    position: absolute;
+    background-color: #C9D1D7;
+    top: 800px;
+    left: 500px;
+    width: 120px;
+    height: 70px;
+    border-style: none;
+    border-radius: 10px;
+}
+
+.lijn {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    height: 100%;
+    width: 2px;
+    background-color: black;
+    transform: translateX(-50%);
+    box-shadow: 5px 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.gbs_logo {
+    position: absolute;
+    background-image: url('./logo_tekst.svg');
+    background-repeat: no-repeat;
+    top: 70px;
+    left: 900px;
+    width: 350px;
+    height: 150px;
+}
+
+.welkom {
+    position: absolute;
+    top: 150px;
+    left: 720px;
+    font-size: 30px;
+    color: #C64A2F;
+}
+
+.uitleg {
+    position: absolute;
+    top: 230px;
+    left: 740px;
+    font-size: 18px;
+    width: 542px;
+    color: #000;
+}
+
+.persoonlijk {
+    position: absolute;
+    top: 470px;
+    left: 720px;
+    font-size: 30px;
+    color: #C64A2F;
+}
+
+.anoniem {
+    position: absolute;
+    top: 550px;
+    left: 740px;
+    font-size: 18px;
+    width: 542px;
+    color: #000;
+}
+
+.boekenlegger {
+    position: absolute;
+    top: -54px;
+    left: 720px;
+    width: 50px;
+    height: 100px;
+    background-color: #C64A2F;
+    margin: 50px auto;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.boekenlegger::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 0;
+    height: 0;
+    border-left: 25px solid transparent;
+    border-right: 25px solid transparent;
+    border-top: 25px solid white;
+    rotate: 180deg;
+}
+
+.nl {
+    position: absolute;
+    top: 650px;
+    left: 740px;
+    font-size: 18px;
+}
+
+.vlagNL {
+    background-image: url('./img/nl_vlag.jpg');
+    background-size: cover;
+    position: absolute;
+    top: 650px;
+    left: 780px;
+    width: 35px;
+    height: 26px;
+}
+
+.en {
+    position: absolute;
+    top: 650px;
+    left: 900px;
+    font-size: 18px;
+}
+
+.vlagEN {
+    background-image: url('./img/engelse_vlag.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 650px;
+    left: 940px;
+    width: 45px;
+    height: 26px;
+}
+
+.inloggen {
+    position: absolute;
+    background-color: #C9D1D7;
+    top: 800px;
+    left: 720px;
+    width: 180px;
+    height: 70px;
+    border-style: none;
+    border-radius: 10px;
+}
+
+.account {
+    position: absolute;
+    background-color: #C9D1D7;
+    top: 800px;
+    left: 960px;
+    width: 285px;
+    height: 70px;
+    border-style: none;
+    border-radius: 10px;
+}
+
+
+@media screen and (max-width: 1850px) {
+    .boek {
+        left: 300px;
+        width: 1165px;
+    }
+
+    .logo {
+        left: 1390px;
+    }
+
+    .kies {
+        width: 451px;
+        font-size: 25px;
+    }
+
+    .lijst {
+        margin-left: 40px;
+    }
+
+    .lezen {
+        left: 400px;
+    }
+
+    .gbs_logo {
+        left: 800px;
+    }
+
+    .welkom {
+        left: 620px;
+        font-size: 25px;
+    }
+
+    .uitleg {
+        left: 640px;
+        font-size: 15px;
+        width: 500px;
+    }
+
+    .persoonlijk {
+        left: 620px;
+        font-size: 25px;
+    }
+
+    .anoniem {
+        left: 640px;
+        font-size: 15px;
+        width: 500px;
+    }
+
+    .boekenlegger {
+        left: 620px;
+    }
+
+    .nl {
+        left: 640px;
+    }
+
+    .vlagNL {
+        left: 680px;
+    }
+
+    .en {
+        left: 800px;
+    }
+
+    .vlagEN {
+        left: 840px;
+    }
+
+    .inloggen {
+        left: 620px;
+    }
+
+    .account {
+        left: 860px;
+    }
+}
+
+@media screen and (max-width: 1750px) {
+    .boek {
+        left: 200px;
+        width: 1065px;
+    }
+
+    .logo {
+        left: 1290px;
+    }
+
+    .kies {
+        width: 451px;
+        font-size: 25px;
+    }
+
+    .lijst {
+        margin-left: 40px;
+    }
+
+    .lezen {
+        left: 360px;
+    }
+
+    .gbs_logo {
+        left: 700px;
+        width: 300px;
+    }
+
+    .welkom {
+        left: 560px;
+        font-size: 25px;
+    }
+
+    .uitleg {
+        left: 560px;
+        font-size: 15px;
+        width: 500px;
+    }
+
+    .persoonlijk {
+        left: 560px;
+        font-size: 25px;
+    }
+
+    .anoniem {
+        left: 560px;
+        font-size: 15px;
+        width: 500px;
+    }
+
+    .boekenlegger {
+        left: 580px;
+        width: 50px;
+        height: 100px;
+    }
+
+    .nl {
+        left: 560px;
+        font-size: smaller;
+    }
+
+    .vlagNL {
+        background-size: fill;
+        left: 600px;
+        height: 26px;
+        width: 35px;
+    }
+
+    .en {
+        left: 700px;
+        font-size: smaller;
+    }
+
+    .vlagEN {
+        left: 740px;
+    }
+
+    .inloggen {
+        left: 560px;
+        width: 100px;
+    }
+
+    .account {
+        left: 720px;
+        width: 150px;
+    }    
+}
+
+@media screen and (max-width: 1650px) {
+    .home{
+        background-image: none;
+        background-color: #fff;
+    }
+
+    .boek {
+        left: 3px;
+        top: 150px;
+        width: 1275px;
+        height: 800px;
+    }
+
+    .logo {
+        left: 937px;
+        top: 25px;
+    }
+
+    .kies {
+        width: 451px;
+        font-size: 25px;
+    }
+
+    .lijst {
+        margin-left: 40px;
+    }
+
+    .lezen {
+        left: 480px;
+        top: 720px;
+        width: 100px;
+        height: 60px;
+    }
+
+    .gbs_logo {
+        left: 800px;
+        width: 300px;
+    }
+
+    .welkom {
+        left: 660px;
+        font-size: 25px;
+    }
+
+    .uitleg {
+        left: 660px;
+        font-size: 15px;
+        width: 500px;
+    }
+
+    .persoonlijk {
+        left: 660px;
+        font-size: 25px;
+    }
+
+    .anoniem {
+        left: 660px;
+        font-size: 15px;
+        width: 500px;
+    }
+
+    .boekenlegger {
+        left: 670px;
+        width: 50px;
+        height: 100px;
+    }
+
+    .nl {
+        left: 660px;
+        font-size: smaller;
+    }
+
+    .vlagNL {
+        background-size: cover;
+        left: 700px;
+        height: 26px;
+        width: 35px;
+    }
+
+    .en {
+        left: 800px;
+        font-size: smaller;
+    }
+
+    .vlagEN {
+        left: 840px;
+        height: 25px;
+        width: 40px;
+    }
+
+    .inloggen {
+        left: 660px;
+        top: 720px;
+        width: 100px;
+        height: 60px;
+    }
+
+    .account {
+        left: 820px;
+        top: 720px;
+        width: 150px;
+        height: 60px;
+    }       
+}
+
+@media screen and (max-width: 1280px){
+    .boek {
+        left: 30px;
+        top: 155px;
+        width: 752px;
+        height: 1200px;
+    }
+
+    .lijn{
+        display: none;
+    }
+
+    .logo_gbs{
+        display: none;
+    }
+
+    .logo {
+        left: 460px;
+        top: 21px;
+    }
+
+    .kies {
+        top: 800px;
+        left: 76px;
+        width: 451px;
+        font-size: 30px;
+    }
+
+    .lijst {
+        top: 880px;
+        left: 40px;
+        height: 320px;
+        width: 250px;
+        margin-left: 40px;
+    }
+
+    .lijst-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr; 
+        gap: 20px; 
+      }
+      
+      .lijst {
+        list-style: none;
+        padding: 0;
+      }
+      
+      .lijst li {
+        cursor: pointer;
+        padding-right: 15px;
+        transition: background-color 0.2s;
+      }
+
+    .lezen {
+        left: 500px;
+        top: 1100px;
+        width: 120px;
+        height: 70px;
+    }
+
+    .gbs_logo {
+        left: 76px;
+        top: 100px;
+        width: 425px;
+        height: 78px;
+    }
+
+    .welkom {
+        left: 73px;
+        top: 200px;
+        width: 613px;
+        height: 61px;
+        font-size: 25px;
+    }
+
+    .uitleg {
+        left: 73px;
+        top: 280px;
+        font-size: 15px;
+        width: 542px;
+        height: 295px;
+    }
+
+    .persoonlijk {
+        left: 73px;
+        top: 480px;
+        font-size: 25px;
+    }
+
+    .anoniem {
+        left: 73px;
+        top: 550px;
+        font-size: 15px;
+        width: 500px;
+        height: 104px;
+    }
+
+    .boekenlegger {
+        left: 600px;
+        width: 50px;
+        height: 100px;
+    }
+
+    .nl {
+        left: 81px;
+        top: 650px;
+        font-size: smaller;
+    }
+
+    .vlagNL {
+        background-size: cover;
+        left: 120px;
+        top: 650px;
+        height: 15px;
+        width: 20px;
+    }
+
+    .en {
+        left: 180px;
+        top: 650px;
+        font-size: smaller;
+    }
+
+    .vlagEN {
+        left: 220px;
+        top: 650px;
+        height: 15px;
+        width: 25px;
+    }
+
+    .inloggen {
+        left: 93px;
+        top: 700px;
+        width: 180px;
+        height: 70px;
+    }
+
+    .account {
+        left: 347px;
+        top: 700px;
+        width: 285px;
+        height: 70px;
+    }       
+}
+
+@media screen and (max-width: 820px){
+    .boek {
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border-style: none;
+        box-shadow: none;
+    }
+
+    .logo {
+        display: none;
+    }
+
+    .kies {
+        top: 1020px;
+        left: -10px;
+        width: 200px;
+        font-size: 25px;
+    }
+
+    .lijst {
+        list-style: none;
+        padding: 0;
+        display: block;
+        top: 1120px;
+        left: 20px;
+        height: 320px;
+        width: 200px;
+        margin-left: 40px;
+    }
+
+    .lijst-container {
+        display: block;
+        grid-template-columns: 1fr;
+        gap: 0px; 
+      }
+      
+      .lijst li {
+        cursor: pointer;
+        padding-right: 15px;
+        transition: background-color 0.2s;
+      }
+
+    .lezen {
+        left: 20px;
+        top: 1670px;
+        width: 120px;
+        height: 70px;
+    }
+
+    .gbs_logo {
+        left: 50px;
+        top: 50px;
+        width: 200px;
+        height: 45px;
+    }
+
+    .welkom {
+        left: 20px;
+        top: 143px;
+        width: 200px;
+        height: 61px;
+        font-size: 25px;
+    }
+
+    .uitleg {
+        left: 25px;
+        top: 247px;
+        font-size: 15px;
+        width: 200px;
+        height: 463px;
+    }
+
+    .persoonlijk {
+        left: 20px;
+        top: 650px;
+        font-size: 25px;
+    }
+
+    .anoniem {
+        left: 25px;
+        top: 700px;
+        font-size: 15px;
+        width: 200px;
+        height: 104px;
+    }
+
+    .boekenlegger {
+        display: none;
+    }
+
+    .nl {
+        left: 75px;
+        top: 820px;
+        font-size: smaller;
+    }
+
+    .vlagNL {
+        background-size: cover;
+        left: 100px;
+        top: 820px;
+        height: 15px;
+        width: 20px;
+    }
+
+    .en {
+        left: 150px;
+        top: 820px;
+        font-size: smaller;
+    }
+
+    .vlagEN {
+        left: 180px;
+        top: 820px;
+        height: 15px;
+        width: 25px;
+    }
+
+    .inloggen {
+        left: 75px;
+        top: 850px;
+        width: 150px;
+        height: 55px;
+    }
+
+    .account {
+        left: 50px;
+        top: 920px;
+        width: 200px;
+        height: 70px;
+    }
+
+    .home{
+        background-image: none;
+        background-color: #fff;
+    }
+}
